@@ -28,4 +28,4 @@ CoVaccinator-19 is an app to provide you ease to access your Covid Vaccination D
 - UI - Inspired from [Dashboard UI  by Bruce Wu ]
 
   [Dashboard UI  by Bruce Wu ]: <https://www.figma.com/community/file/877385370292468056/Dashboard>
-   [CoVaccinator-19]: <https://github.com/joemccann/dillinger.git>
+   [CoVaccinator-19]: < https://manav1410.github.io/WebD-Selection/>
