@@ -228,7 +228,9 @@
         <p id="selected_menu">Dashboard</p>
       </span>
       <div class="log">
-        <button class="login-reg"><p>Register / Login</p></button>
+        <button class="login-reg" onclick="login_pageAppear()">
+          <p>Register / Login</p>
+        </button>
       </div>
       <div class="theme_cont">
         <div class="theme">
@@ -593,7 +595,7 @@
             </svg>
           </div>
           <p class="pls_log_in_txt">Register / Login to continue.</p>
-          <button class="login-reg">
+          <button class="login-reg" onclick="login_pageAppear()">
             <p>Register / Login</p>
           </button>
         </div>
@@ -628,7 +630,7 @@
             </svg>
           </div>
           <p class="pls_log_in_txt">Register / Login to continue.</p>
-          <button class="login-reg">
+          <button class="login-reg" onclick="login_pageAppear()">
             <p>Register / Login</p>
           </button>
         </div>
@@ -663,7 +665,7 @@
             </svg>
           </div>
           <p class="pls_log_in_txt">Register / Login to continue.</p>
-          <button class="login-reg">
+          <button class="login-reg" onclick="login_pageAppear()">
             <p>Register / Login</p>
           </button>
         </div>
@@ -681,6 +683,90 @@
       </div>
     </section>
 
+    <section id="login_page">
+      <div class="wrapper">
+        <div class="cross_cont">
+          <div class="cross_box">
+            <svg
+              class="cross"
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 1L1 13"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M1 1L13 13"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="title-text">
+          <div class="title login">Login Form</div>
+          <div class="title signup">Signup Form</div>
+        </div>
+
+        <div class="form-container">
+          <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked />
+            <input type="radio" name="slide" id="signup" />
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+            <form action="#" class="login">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="pass-link">
+                <a href="#">Forgot password?</a>
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login" />
+              </div>
+              <div class="signup-link">
+                Not a member? <a href="">Signup now</a>
+              </div>
+            </form>
+            <form action="#" class="signup">
+              <div class="field">
+                <input type="text" placeholder="Email Address" required />
+              </div>
+              <div class="field">
+                <input type="password" placeholder="Password" required />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  placeholder="Confirm password"
+                  required
+                />
+              </div>
+              <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <script type="text/javascript" src="./app.js"></script>
   </body>
 </html>
