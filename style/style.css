@@ -2304,7 +2304,7 @@ body {
   width: 25px;
   border-radius: 10px;
   top: 6px;
-  right: 80px;
+  right: 100px;
 }
 
 #dashboard .dash_chart .dash_cont .graph-legends .legends .d-1-leg {
@@ -2727,13 +2727,13 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   body {
     -ms-grid-rows: 10vh calc(90vh - 2px);
     -ms-grid-columns: calc(100vw - 4px);
         grid-template: 10vh calc(90vh - 2px)/calc(100vw - 4px);
     min-height: 100vh;
-    padding: 2px;
+    padding-left: 2px;
   }
   body::-webkit-scrollbar {
     display: none;
@@ -2748,7 +2748,7 @@ body {
     border-radius: 10px 10px 0 0;
   }
   .side_menu_check {
-    top: 10px;
+    top: 12px;
     left: 15px;
     height: 35px;
     width: 35px;
@@ -2776,7 +2776,7 @@ body {
         grid-template-columns: 16vw auto;
   }
   .side_menu_control {
-    top: 10px;
+    top: 12px;
     left: 15px;
     height: 35px;
     width: 35px;
@@ -2802,30 +2802,29 @@ body {
     -ms-grid-column-span: 1;
     grid-column: 1/2;
     display: none;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    top: 2px;
-    left: 2px;
+    left: 0;
   }
   #side_menu .side_menu_buttons label {
-    height: 12vw;
+    height: 20%;
   }
   #side_menu .side_menu_buttons label input {
     height: 11vw;
     width: 11vw;
   }
   #side_menu .side_menu_buttons label span svg {
-    width: 4vw;
+    width: 4.3vw;
   }
   #side_menu .side_menu_buttons label span p {
-    font-size: 2.4vh;
+    font-size: 2.6vh;
   }
   #side_menu .br_bot {
     display: none;
   }
   #side_menu .logo {
-    height: 15vw;
+    height: 25vw;
   }
   #side_menu .logo img {
     height: 12vw;
@@ -2847,7 +2846,7 @@ body {
   }
   #nav_menu .selected_menu_cont {
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 10vw;
   }
   #nav_menu .log {
     width: 18vw;
@@ -2858,7 +2857,7 @@ body {
     margin-right: 0;
   }
   #nav_menu .log .login-reg {
-    padding: 1.6vh 1.8vh;
+    padding: 1vh 1.4vh;
   }
   #nav_menu .log .login-reg p {
     font-size: 1.6vh;
@@ -2881,14 +2880,14 @@ body {
     left: 0.4vw;
   }
   #nav_menu .theme_cont .theme span svg {
-    width: 3.6vw;
+    width: 3.8vw;
   }
   #nav_menu .theme_cont .theme span.to_light {
     top: 0;
     left: 0;
   }
   #nav_menu .theme_cont .theme span.to_light svg {
-    width: 4.4vw;
+    width: 4.6vw;
   }
   #dashboard {
     -ms-grid-rows: 1fr 1fr 1fr 350px 1px;
@@ -2931,11 +2930,11 @@ body {
     grid-column: 1/2;
   }
   #dashboard .dash_card img {
-    left: -5%;
+    left: -25%;
   }
   #dashboard .dash_card .dash_card_text {
     width: 78%;
-    right: 1vw;
+    right: 0;
   }
   #dashboard .extra {
     -ms-grid-column: 1;
@@ -2949,6 +2948,7 @@ body {
   }
   #account .logged_out .pls_log_in, #downloads .logged_out .pls_log_in, #alerts .logged_out .pls_log_in {
     gap: 8vh;
+    text-align: center;
   }
   #account .logged_out .pls_log_in .lock_cont, #downloads .logged_out .pls_log_in .lock_cont, #alerts .logged_out .pls_log_in .lock_cont {
     height: 25vw;
